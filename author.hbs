@@ -1,0 +1,26 @@
+{{!< default}}
+
+<div>
+        {{#author}}
+            <h1>{{name}}</h1>
+            {{#if bio}}
+                <div>{{bio}}</div>
+            {{/if}}
+
+            <div class="socials">
+                {{#if twitter}}
+                    <a href="{{twitter_url}}" target="_blank" rel="noopener">Twitter</a>
+                {{/if}}
+            </div>
+
+        {{/author}}
+
+        <div>
+        {{#foreach posts}}
+
+            {{> "post"}} {{!-- partials/post.hbs --}}
+
+        {{/foreach}}
+        </div>
+
+</div>

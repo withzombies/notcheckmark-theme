@@ -1,0 +1,34 @@
+{{!< default}}
+
+<div>
+    <div>
+
+        {{#tag}}
+        <header>
+            <h1>{{name}}</h1>
+
+            <p>
+                {{#if description}}
+                    {{description}}
+                {{else}}
+                    A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
+                {{/if}}
+            </p>
+
+            {{#if feature_image}}
+                <img src="{{feature_image}}" alt="{{name}}" />
+            {{/if}}
+
+        </header>
+        {{/tag}}
+
+        <div>
+        {{#foreach posts}}
+
+            {{> "post"}} {{!-- partials/post.hbs --}}
+
+        {{/foreach}}
+        </div>
+
+    </div>
+</div>

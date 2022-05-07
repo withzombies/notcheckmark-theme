@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{#post}}
+
+<article>
+
+<h1 class="post-title">{{title}}</h1>
+
+    <section>
+        {{content}}
+    </section>
+
+    <div class="post-footer">
+        <span class="post-date"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time> by {{#foreach authors}}<a href="{{url}}">{{name}}</a> {{/foreach}}
+        {{#if tags}}
+        <div>
+        Tagged: {{tags}}
+        </div>
+        {{/if}}
+    </div>
+
+</article>
+
+{{/post}}
+

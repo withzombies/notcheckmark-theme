@@ -1,0 +1,35 @@
+{
+  "name": "notcheckmark",
+  "description": "The notcheckmark blog theme",
+  "demo": "http://www.notcheckmark.com",
+  "version": "1.0.0",
+  "engines": {
+      "ghost": ">=4.22.3"
+  },
+  "author": {
+      "name": "notcheckmark",
+      "email": "admin@notcheckmark.com",
+      "url": "https://www.notcheckmark.com"
+  },
+  "config": {
+      "posts_per_page": 8
+  },
+  "gpm": {
+      "type": "theme",
+      "categories": [
+          "Minimal",
+          "Personal Blogs"
+      ]
+  },
+  "keywords": [
+      "responsive",
+      "ghost",
+      "minimal",
+      "theme",
+      "ghost-theme"
+  ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/withzombies/notcheckmark-ghost-theme.git"
+  }
+}

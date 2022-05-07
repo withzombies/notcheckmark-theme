@@ -1,0 +1,154 @@
+:root {
+  /* Pure CSS variables */
+  --container-width: 800px;
+  --mono-font-stack: "Consolas", monospace;
+  --font-stack: var(--mono-font-stack);
+  /* Fallbacks should be provided, of course */
+}
+
+body {
+  max-width: 800px;
+  max-width: var(--container-width);
+  padding: 0 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.5;
+  font-family: monospace;
+  font-family: var(--font-stack);
+  background: #FFFFFF;
+}
+
+header {
+    display: block;
+    text-align: center;
+
+    h1 {
+        font-size: 18pt;
+    }
+
+    h3 {
+        font-size: 16pt;
+    }
+}
+
+nav {
+    font-size: 14pt;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 11pt;
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+    margin: 0.5rem;
+}
+
+footer ul {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    margin: 0.5rem;
+}
+
+a {
+    color: blue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+
+p {
+    margin-top: 0px;
+    margin-bottom: 4ch;
+    text-align: justify;
+}
+sup {
+    vertical-align: 0.3em;
+    font-size: 0.65em;
+}
+
+pre {
+    font-family: Consolas,
+		 Monospace, /* Linux = DejaVu Sans Mono */
+		 Courier;   /* MacOSX & Windows = Courier */
+    font-size: 16px;
+    background-color: #eeeeff;
+    padding-left: 2%;
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+    overflow: auto;
+}
+
+div.heading {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* add line above post date */
+.post-date {
+  margin-top: 2em;
+  margin-right: 0.5em;
+}
+
+.org-src-container {
+    margin-top: -2em;
+}
+
+.org-ul {
+    margin-top: -2em;
+}
+
+.post-title {
+  margin-top: 0.2em;
+}
+
+blockquote {
+    background-color: #f3f3f3;
+    border: dashed 1px grey;
+    width: 97.5%;
+    font-style: italic;
+    text-align: justify;
+
+    padding: 1ch;
+    padding-top: 2ch;
+    padding-bottom: 2ch;
+
+    margin : 0ch;
+    margin-bottom: 2ch;
+    margin-top: 0ch;
+}
+
+blockquote div {
+    text-transform: none;
+    text-align: right;
+    width: 100%;
+}
+
+figcaption {
+    background-color: #fff;
+    color: #626d79;
+    font-weight: 200;
+    padding: 2px;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.socials {
+    padding-bottom: 2rem;
+}
