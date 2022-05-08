@@ -1,10 +1,27 @@
 :root {
   /* Pure CSS variables */
   --container-width: 800px;
-  --mono-font-stack: "Consolas", monospace;
-  --font-stack: var(--mono-font-stack);
+  --mono-font-stack: 'Roboto Mono', monospace;
+  --font-stack: 'Roboto', sans-serif;
   /* Fallbacks should be provided, of course */
+
+  --color-background: #fff;
+  --color-background-secondary: #f7f7f7;
+  --color-text: #1e1e1e;
+  --color-text-secondary: #7d7d7d;
+  --color-link: #2D639E;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #1D1D1D;
+        --color-background-secondary: #3f3f3f;
+        --color-text: #D8D8D8;
+        --color-text-secondary: #878787;
+        --color-link: #367DB4;
+    }
+}
+
 
 body {
   max-width: 800px;
@@ -13,9 +30,10 @@ body {
   margin-right: auto;
   margin-left: auto;
   line-height: 1.5;
-  font-family: monospace;
+  font-family: sans-serif;
   font-family: var(--font-stack);
-  background: #FFFFFF;
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 header {
@@ -56,7 +74,7 @@ nav li {
 }
 
 a {
-    color: blue;
+    color: var(--color-link);
 }
 
 img {
@@ -84,9 +102,7 @@ sup {
 }
 
 pre {
-    font-family: Consolas,
-		 Monospace, /* Linux = DejaVu Sans Mono */
-		 Courier;   /* MacOSX & Windows = Courier */
+    font-family: var(--mono-font-stack);
     font-size: 16px;
     background-color: #eeeeff;
     padding-left: 2%;
@@ -96,7 +112,7 @@ pre {
 }
 
 div.heading {
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
 }
 
@@ -119,7 +135,7 @@ div.heading {
 }
 
 blockquote {
-    background-color: #f3f3f3;
+    background-color: var(--color-background-secondary);
     border: dashed 1px grey;
     width: 97.5%;
     font-style: italic;
@@ -141,9 +157,8 @@ blockquote div {
 }
 
 figcaption {
-    background-color: #fff;
-    color: #626d79;
-    font-weight: 200;
+    color: var(--color-text-secondary);
+    font-weight: 100;
     padding: 2px;
     padding-bottom: 2rem;
     text-align: center;

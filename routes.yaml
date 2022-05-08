@@ -5,7 +5,7 @@ routes:
 
 collections:
   /:
-    permalink: /{slug}/
+    permalink: '/{year}/{month}/{slug}/'
     template: index
 
 taxonomies:
