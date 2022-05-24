@@ -102,9 +102,8 @@ img {
 }
 
 figure {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    display: block;
+    text-align: center;
     margin: auto;
 }
 
@@ -148,7 +147,7 @@ article.post {
 
 .post-date {
     margin-right: 0.5em;
-    width: 120px;
+    width: 160px;
 }
 
 .org-src-container {
@@ -182,7 +181,6 @@ blockquote div {
 figcaption {
     color: var(--color-text-secondary);
     text-align: center;
-    padding: 1.5rem 1.5rem 0;
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 1.4em;
