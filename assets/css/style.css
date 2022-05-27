@@ -167,7 +167,7 @@ blockquote {
     border: 0;
     width: 97.5%;
     font-style: italic;
-    text-align: justify;
+    text-align: left;
     padding: 2ch 1ch;
     margin: 0 0 2ch;
 }
