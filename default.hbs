@@ -19,17 +19,20 @@
      <meta name="HandheldFriendly" content="True" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     {{! Styles'n'Scripts }}
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+     <link rel="apple-touch-icon" sizes="180x180" href="{{asset "img/apple-touch-icon.png"}}">
+     <link rel="icon" type="image/png" sizes="32x32" href="{{asset "img/favicon-32x32.png"}}">
+     <link rel="icon" type="image/png" sizes="16x16" href="{{asset "img/favicon-16x16.png"}}>
+     <link rel="manifest" href="{{asset "img/site.webmanifest"}}">
+     <link rel="mask-icon" href="{{asset "img/safari-pinned-tab.svg"}}" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
 
      <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
-     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" media="screen and (prefers-color-scheme: light)" />
-     <link rel="stylesheet" type="text/css" href="{{asset "css/prism-dark.css"}}" media="screen and (prefers-color-scheme: dark)" />
+     <link rel="stylesheet" rel="preload" type="text/css" href="{{asset "css/prism.css"}}" media="screen and (prefers-color-scheme: light)" />
+     <link rel="stylesheet" rel="preload" type="text/css" href="{{asset "css/prism-dark.css"}}" media="screen and (prefers-color-scheme: dark)" />
 
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js" integrity="sha512-RDQSW3KoqJMiX0L/UBgwBmH1EmRYp8LBOiLaA8rBHIy+7OGP/7Gxg8vbt8wG4ZYd29P0Fnoq6+LOytCqx3cyoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js" integrity="sha512-RDQSW3KoqJMiX0L/UBgwBmH1EmRYp8LBOiLaA8rBHIy+7OGP/7Gxg8vbt8wG4ZYd29P0Fnoq6+LOytCqx3cyoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
      {{! Ghost outputs important style and meta data with this tag }}
      {{ghost_head}}
