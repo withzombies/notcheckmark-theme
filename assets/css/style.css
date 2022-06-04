@@ -1,10 +1,10 @@
 :root {
     --mono-font-stack: SFMono-Regular, Menlo, Monaco,
-               Consolas, "Liberation Mono", 
-               "Courier New", monospace;
+    Consolas, "Liberation Mono", 
+    "Courier New", monospace;
     --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-               "Helvetica Neue", sans-serif;
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
 
     --color-background: #fff;
     --color-background-secondary: rgb(255, 250, 240);
@@ -48,6 +48,41 @@ body {
         max-width: 80%;
         font-size: 1em;
         --sixteen-nine-h: calc(100vw * 9 / 16);
+    }
+    article.post {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: flex-start;
+        margin-top: 1em;
+    }
+
+    .post-date {
+        margin-right: 0.5em;
+        min-width: 160px;
+        min-width: 100%;
+        flex: 1;
+    }
+
+    .post-title {
+        margin-top: 0.2em;
+        min-width: 66%;
+    }
+}
+
+@media (min-width:840px) {
+    article.post {
+        display: table-row;
+    }
+
+    .post-date {
+        display: table-cell;
+        padding-right: 1em;
+    }
+
+    .post-title {
+        display: table-cell;
     }
 }
 
@@ -140,17 +175,6 @@ pre {
     overflow: auto;
 }
 
-article.post {
-    display: flex;
-    flex-flow: row;
-    align-items: baseline;
-    justify-content: flex-start;
-}
-
-.post-date {
-    margin-right: 0.5em;
-    width: 160px;
-}
 
 .org-src-container {
     margin-top: -2em;
@@ -160,9 +184,6 @@ article.post {
     margin-top: -2em;
 }
 
-.post-title {
-    margin-top: 0.2em;
-}
 
 blockquote {
     background-color: var(--color-background-secondary);
